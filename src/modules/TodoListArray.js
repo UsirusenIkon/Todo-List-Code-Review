@@ -10,7 +10,7 @@ class TodoListArray {
 
   updateTodo(idx, newTodo) {
     this.todos[idx - 1] = newTodo;
-    todos.forEach(todo => {todo.id +=1;});
+    this.todos.forEach((todo) => { todo.id += 1; });
     localStorage.setItem('todos', JSON.stringify(this.todos));
   }
 
